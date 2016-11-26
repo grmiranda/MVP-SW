@@ -2,11 +2,14 @@
 <html>
 
 <head>
+     <meta charset="utf-8">
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
-
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="controller.js"></script>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -19,14 +22,14 @@
       <nav>
         <div class="nav-wrapper green darken-4">
           <a class="brand-logo">Logo</a>
-          <a data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <a data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
             <li><a>Cadastrar</a></li>
-            <li><a class="waves-effect waves-light btn white">LogIn</a></li>
+            <li><a class="waves-effect waves-light btn white black-text">LogIn</a></li>
           </ul>
-          <ul class="side-nav" id="mobile-demo">
+          <ul id="slide-out" class="side-nav active">
             <li><a>Cadastrar</a></li>
-            <li><a>LogIn</a></li>
+            <li><a>logIn</a></li>
           </ul>
         </div>
       </nav>
@@ -37,11 +40,27 @@
     </main>
 
     <footer>
-
+      <footer class="page-footer green darken-4">
+        <div class="container">
+          <div class="row">
+            <div class="col l4 s12">
+              <h5 class="white-text">Renda Extra</h5>
+              <p class="grey-text text-lighten-4">
+                A melhor opção para você <br/> escolher o melhor serviço <br/> com o melhor preço!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+            Made By Startup Weekend
+          </div>
+        </div>
+      </footer>
     </footer>
     <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="controller.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+
     <script type="text/javascript" src="../js/materialize.min.js"></script>
 </body>
 
